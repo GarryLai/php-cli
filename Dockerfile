@@ -20,3 +20,5 @@ RUN apt-get update \
 	ffmpeg \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists
+
+COPY php.ini /usr/local/etc/php/
